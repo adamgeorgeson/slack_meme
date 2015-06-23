@@ -7,8 +7,8 @@ Generate Memes using the ImgFlip API directly in Slack.
 Example of setting up with Heroku.
 
 ```
-git clone git@github.com:recursionpharma/anonymous-slack.git
-cd anonymous-slack
+git clone git@github.com:adamgeorgeson/slack_meme.git
+cd slack_meme
 heroku create -b https://github.com/kr/heroku-buildpack-go.git
 ```
 

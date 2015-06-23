@@ -138,7 +138,7 @@ func main() {
 		result := readRequest(r)
 		fmt.Fprintf(w, result)
 	})
-	http.ListenAndServe(fmt.Sprintf(":%d", 5000), nil)
+	http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
 }
 
 func init() {
