@@ -1,0 +1,10 @@
+HTTP/1.1 406 Not Acceptable
+Server: cloudflare-nginx
+Date: Mon, 22 Jun 2015 22:16:22 GMT
+Content-Type: text/html; charset=iso-8859-1
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d51581ed978a3963c7b5e00892f93f3941435011381; expires=Tue, 21-Jun-16 22:16:21 GMT; path=/; domain=.imgflip.com; HttpOnly
+Vary: Accept-Encoding
+CF-RAY: 1fab513064080a78-LHR
+
