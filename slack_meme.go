@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"math/rand"
@@ -40,6 +41,7 @@ type Attachment struct {
 
 var (
 	regEx = regexp.MustCompile(`(.*[\s])(top:)(.*[\s]+)(bottom:)(.*)`)
+	port  int
 )
 
 // Read the incoming request, then send the response
@@ -137,4 +139,9 @@ func main() {
 		fmt.Fprintf(w, result)
 	})
 	http.ListenAndServe(fmt.Sprintf(":%d", 5000), nil)
+}
+
+func init() {
+	flag.IntVar(&port, "port", 5000, "HTTP server port")
+	flag.Parse()
 }
